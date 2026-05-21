@@ -17,12 +17,12 @@ internal class Program
         string broj = Console.ReadLine();
 
         PametniTelefon konkretniTelefon = telefon as PametniTelefon;
-         konkretniTelefon.Poziv(broj);
+        Console.WriteLine( konkretniTelefon.Poziv(broj));
         
 
         Console.Write("Koju web stranicu da posjetim? ");
         string url = Console.ReadLine();
 
-        telefon.Surfanje(url);
+       Console.WriteLine( telefon.Surfanje(url));
     }
 }

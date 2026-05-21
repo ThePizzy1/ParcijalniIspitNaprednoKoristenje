@@ -20,15 +20,11 @@ internal class PametniTelefon : IPametniTelefon
     {
         if (ProvjeriAkoJeValidanUrl(url))
         {
-            string poruka = "Surfam na: " + url;
-            Console.WriteLine(poruka);
-            return poruka;
+            return "Surfam na: " + url;
         }
         else
         {
-            string poruka = "Neispravan url!";
-            Console.WriteLine(poruka);
-            return poruka;
+            return "Neispravan url!";
         }
 
     }
@@ -36,16 +32,12 @@ internal class PametniTelefon : IPametniTelefon
     {
         if (ProvjeriAkoJeValidanBroj(telefonski_broj))
         {
-            string poruka = "Evoo zovem.... " + telefonski_broj;
             Console.Beep();
-            Console.WriteLine(poruka);
-            return poruka;
+            return "Evoo zovem.... +" + telefonski_broj;
         }
         else
         {
-            string poruka = "Neispravan telefonski broj!";
-            Console.WriteLine(poruka);
-            return poruka;
+            return "Neispravan telefonski broj!";
         }
     }
 
